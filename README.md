@@ -46,7 +46,7 @@ The template structure is as follows:
     └── requirements.txt  <- include dependencies to run the app
 ```
 
-# How to Install
+# How to Install and run
 Prerequisites
 `Docker`,`Docker-Compose` and `MongoDB` must be installed on your system
 
@@ -57,7 +57,7 @@ To install `docker` head over [here](https://docs.docker.com/engine/install/ubun
 #### To Install MongoDB
 To install `MongoDB` head over [here](https://websiteforstudents.com/how-to-install-mongodb-on-ubuntu-20-04-18-04/)
 
-## To run locally
+### To run locally
 ```
 $ mkdir my_project
   --template=https://github.com/harsh-hustler/Similarity-Checker/archive/master.zip
