@@ -1,5 +1,5 @@
 # Similarity-Checker
-**Tools and Technologies used are docker,docker-compose,MongoDB,Flask,Postman**(to run on a server).
+**Tools and Technologies used are docker,docker-compose,MongoDB,Flask,Postman**(to test the API).
 
 Similarity-Checker is a RESTful API made using an NLP model.
 This API is made in **flask** using docker-compose as tool to provide end to end user experience without any hassle and easily producible on any server.
