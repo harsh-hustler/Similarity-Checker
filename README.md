@@ -51,10 +51,10 @@ Prerequisites
 `Docker`,`Docker-Compose` and `MongoDB` must be installed on your system
 
 If not installed instructions can be found here
-- To Install docker and docker-compose.
+#### To Install docker and docker-compose
 To install `docker` head over [here](https://docs.docker.com/engine/install/ubuntu/) and `docker-compose` [here](https://docs.docker.com/compose/install/)
 
-- To Install MongoDB
+#### To Install MongoDB
 To install `MongoDB` head over [here](https://websiteforstudents.com/how-to-install-mongodb-on-ubuntu-20-04-18-04/)
 
 ## To run locally
