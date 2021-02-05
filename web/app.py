@@ -3,7 +3,6 @@ from flask_restful import Api, Resource
 from pymongo import MongoClient
 import bcrypt
 import spacy
-import os
 
 app = Flask(__name__)
 api = Api(app)
@@ -30,7 +29,7 @@ class Register(Resource):
         if UserExist(username):
             retJson = {
                 'status':301,
-                'msg': 'Invalid Username'
+                'msg': 'Invalid Username,User already exists with this username please try other username'
             }
             return jsonify(retJson)
 
@@ -82,9 +81,10 @@ class Detect(Resource):
         if not UserExist(username):
             retJson = {
                 "status":301,
-                "msg": "Invalid Username"
+                "msg": "There is no user with this username,please register first and then try again"
             }
             return jsonify(retJson)
+
         #Step 3 verify the username pw match
         correct_pw = verifyPw(username, password)
 
@@ -114,18 +114,19 @@ class Detect(Resource):
 
         retJson = {
             "status":200,
-            "ratio": ratio,
+            "Similarity ratio": ratio,
             "msg":"Similarity score calculated successfully"
         }
 
         #Take away 1 token from user
         current_tokens = countTokens(username)
+
         users.update({
             "Username":username
         }, {
             "$set":{
                 "Tokens":current_tokens-1
-                }
+            }
         })
         return jsonify(retJson)
 
@@ -144,14 +145,15 @@ class Refill(Resource):
             }
             return jsonify(retJson)
 
-        correct_pw = "abc123"
+        correct_p = "abc123"
 
-        if not password == correct_pw:
+        if not password == correct_p:
             retJson = {
                 "status":304,
                 "msg": "Invalid Admin Password"
             }
             return jsonify(retJson)
+
 
         #MAKE THE USER PAY!
         users.update({
