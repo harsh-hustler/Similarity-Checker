@@ -50,7 +50,7 @@ The template structure is as follows:
 Prerequisites
 `Docker`,`Docker-Compose` and `MongoDB` must be installed on your system
 
-If not installed instructions can be found here
+If not installed instructions can be found here:
 #### To Install docker and docker-compose
 To install `docker` head over [here](https://docs.docker.com/engine/install/ubuntu/) and `docker-compose` [here](https://docs.docker.com/compose/install/)
 
