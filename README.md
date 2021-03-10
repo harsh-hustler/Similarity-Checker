@@ -6,7 +6,7 @@ This API is made in **flask** using docker-compose as tool to provide end to end
 The Objective of this API is to simulate the day to day use cases along with some flavor of text similarity checking.
 
   - Allows user to **Register** and provide them 3 tokens initially to use the service for free
-  - Hashing is used to store user password
+  - Concept of **Hashing** is used to store user password
   - Database used is **MongoDB**
   - A NLP model called **spacy** is used to detect the similarity of the text which is calculated in ratio between 0 and 1
   - Networking concept is used
