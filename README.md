@@ -48,7 +48,7 @@ The template structure is as follows:
 
 # How to Install and run
 Prerequisites
-`Docker`,`Docker-Compose` and `MongoDB` must be installed on your system
+`Docker`,`Docker-Compose` and `MongoDB` must be installed on your system.
 
 If not installed instructions can be found here:
 #### To Install docker and docker-compose
